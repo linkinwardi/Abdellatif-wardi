@@ -2,9 +2,9 @@
 #Creat by Abdellatif Wardi
 printf "Installing RDP Be Patience... " >&2
 {
-sudo useradd -m awardi
+sudo useradd -m "Your USER"
 sudo adduser awardi sudo
-echo 'awardi:2111' | sudo chpasswd
+echo '"Your USER":"Your Passe word"' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
